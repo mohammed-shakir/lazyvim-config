@@ -31,6 +31,9 @@ vim.keymap.set("v", "x", '"_x', { desc = "Delete selection without yanking" })
 vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { silent = true })
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { silent = true })
 
+-- Insert Mode
+vim.keymap.set("i", "jj", "<Esc>", { desc = "Escape with jj", noremap = true, silent = true })
+
 -- Disable arrow keys in all modes
 for _, mode in ipairs({ "n", "v", "i", "o", "x" }) do
   vim.keymap.set(mode, "<Up>", "<Nop>")
