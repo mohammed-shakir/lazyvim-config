@@ -4,3 +4,4 @@
 
 vim.g.autoformat = true
 vim.g.ai_cmp = false
+vim.g.root_spec = { "cwd" }
