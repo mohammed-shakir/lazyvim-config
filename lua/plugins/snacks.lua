@@ -13,5 +13,17 @@ return {
         easing = "linear",
       },
     },
+    picker = {
+      hidden = true,
+      ignored = true,
+
+      sources = {
+        files = {
+          hidden = true,
+          ignored = true,
+          follow = true,
+        },
+      },
+    },
   },
 }
